@@ -31,57 +31,68 @@ void loop() {
     opcode = Serial.parseInt();
     
     if (opcode == 0) {
-      saida = portaAnd(valorA, valorB);
+      result = portaAnd(valorA, valorB);
       Serial.print("Valor A = ");
       Serial.println(valorA);
+      mostra(valorA, pinoA);
       Serial.print("Valor B = ");
       Serial.println(valorB);
+      mostra(valorB, pinoB);
       Serial.print("OP Code = ");
       Serial.println(opcode);
       Serial.print("Operacao And = ");
-      Serial.println(saida);
+      Serial.println(result);
+      mostra(result, saida);
       Serial.println();
     }
 
     if (opcode == 1) {
-      saida = portaOr(valorA, valorB);
+      result = portaOr(valorA, valorB);
       Serial.print("Valor A = ");
       Serial.println(valorA);
+      mostra(valorA, pinoA);
       Serial.print("Valor B = ");
       Serial.println(valorB);
+      mostra(valorB, pinoB);
       Serial.print("OP Code = ");
       Serial.println(opcode);
       Serial.print("Operacao Or = ");
-      Serial.println(saida);
+      Serial.println(result);
+      mostra(result, saida);
       Serial.println();
     }
 
     if (opcode == 2) {
-      saida = portaNot(valorA);
+      result = portaNot(valorA);
       Serial.print("Valor A = ");
       Serial.println(valorA);
+      mostra(valorA, pinoA);
       Serial.print("Valor B = ");
       Serial.println(valorB);
+      mostra(valorB, pinoB);
       Serial.print("OP Code = ");
       Serial.println(opcode);
       Serial.print("NOT valorA = ");
-      Serial.println(saida);
+      Serial.println(result);
+      mostra(result, saida);
       Serial.println();
     }
 
     if (opcode == 3) {
-      saida = portaSoma(valorA, valorB);
+      result = portaSoma(valorA, valorB);
       Serial.print("Valor A = ");
       Serial.println(valorA);
+      mostra(valorA, pinoA);
       Serial.print("Valor B = ");
       Serial.println(valorB);
+      mostra(valorB, pinoB);
       Serial.print("OP Code = ");
       Serial.print(opcode);
       Serial.println();
       Serial.print("Soma = ");
-      Serial.println(saida);
-      result = portaAnd(valorA, valorB);
-      mostra(result);
+      Serial.println(result);
+      mostra(result, saida);
+      mostra(portaAnd(valorA, valorB), vai1);
     }
   }
 }
@@ -106,9 +117,9 @@ int portaNot(int a){
   
 }
 
-int mostra(int a){
+int mostra(int a, int porta){
   if (a == 1)
-    digitalWrite(vai1, 1);
+    digitalWrite(porta, 1);
   else
-    digitalWrite(vai1, 0);
+    digitalWrite(porta, 0);
 }
