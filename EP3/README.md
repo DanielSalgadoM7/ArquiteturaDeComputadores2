@@ -5,7 +5,7 @@ Durante os primeiros 3 ciclos de azul ligado, apenas o vermelho deverá estar li
 Link para projeto utilizado na Questão 1 do EP3: https://www.tinkercad.com/things/evQw4Yvf5A8-ep3
 
 
-
+<br />
 Instrução para Questão 2 do EP3:
 Através da comunicação serial três valores deverão ser passados ao Arduino. O valor de  a, b e o OP. Code. 
 
