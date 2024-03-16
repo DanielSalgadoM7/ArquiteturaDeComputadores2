@@ -1,1 +1,1 @@
-Links para projetos utilizados no Exercício Prático 2
+Não há links para este Exercício Prático, apenas projetos usados no Logisim.
