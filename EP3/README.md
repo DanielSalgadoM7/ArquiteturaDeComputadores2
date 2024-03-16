@@ -8,5 +8,5 @@ Link para projeto utilizado na Questão 1 do EP3: https://www.tinkercad.com/thin
 <br />
 Instrução para Questão 2 do EP3:
 Através da comunicação serial três valores deverão ser passados ao Arduino. O valor de  a, b e o OP. Code. 
-
+<br />
 Link para projeto utilizado na Questão 2 do EP3: https://www.tinkercad.com/things/ekAf9fauK6t-copy-of-q01ep3
